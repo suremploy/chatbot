@@ -5,10 +5,9 @@ from test import TEST_PROMPT
 import os
 
 # Show title and description.
-st.title("💬 Chatbot")
+st.title("💬 Suremploy")
 st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-4o model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key."
+    "Fitness For Work Generator"
 )
 
 # Ask user for their OpenAI API key via `st.text_input`.
