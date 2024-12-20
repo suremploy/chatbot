@@ -35,10 +35,10 @@ if prompt := st.chat_input("Enter your prompt:"):
         rules=RULES
     )
 
-    # Store and display the current prompt.
-    st.session_state.messages.append({"role": "user", "content": question_prompt})
+    # Store and display the user's input only.
+    st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
-        st.markdown(question_prompt)
+        st.markdown(prompt)
 
     # Generate a response using the OpenAI API.
     completion = client.chat.completions.create(
