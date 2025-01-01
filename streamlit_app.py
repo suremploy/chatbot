@@ -38,7 +38,7 @@ if auth:
     if prompt := st.chat_input("Enter your prompt:"):
         # Format the prompt using the INITIAL_PROMPT and RULES.
         question_prompt = INITIAL_PROMPT.format(
-            assessment_details=TEST_PROMPT.replace("\n\n", "\n"),
+            assessment_details=prompt.replace("\n\n", "\n"),
             gender="Female",
             rules=RULES
         )
