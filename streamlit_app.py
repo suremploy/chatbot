@@ -5,7 +5,7 @@ from test import TEST_PROMPT
 import os
 
 # Show title and description.
-st.title("💬 Suremploy")
+st.title("💬 Suremploy Generator")
 st.write(
     "Fitness For Work Generator"
 )
